@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="modal.css"> <!-- Add a link to your custom CSS for the modal -->
+    <script defer src="about.js"></script> <!-- Add a script tag to include JavaScript for the modal -->
+    <title>About </title>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="portfolio.html">Web Portfolio</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                
+                <h1 class="title">
+                   <span>About Me<br/></span>
+                </h1>
+                <p class="description">
+                    Hi there! My name is Juan Miguel Marnelego. I enjoy playing video games, watching movies and, playing basketball. This is my personal website where I showcase my work and share my journey in the world of Web Development.
+
+                    Feel free to explore my projects and get in touch if you have any inquiries or collaboration opportunities. Thank you for visiting!
+                </p>
+                <div class="action__btns">
+                    <button class="portfolio" onclick="openModal()">Learn More</button> <!-- Add an onclick event to open the modal -->
+                </div>
+            </div>
+            <div class="image">
+                <img src="shades.png" alt="Your Image">
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeBtn" onclick="closeModal()">&times;</span>
+            <h2>Additional Information</h2>
+            <p><strong>Elementary School:</strong> Immaculate Heart of Mary College</p>
+            <p><strong>High School: </strong>IHMC(HS) DBTC(SHS)</p>
+            <p><strong>College:</strong> Don Bosco Technical College</p>
+    
+            <h3>Programming Skills</h3>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%;">60%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+
+</body>
+</html>
